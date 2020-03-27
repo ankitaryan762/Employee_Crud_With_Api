@@ -12,6 +12,9 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
 using Employee_Repository;
+using Employee_Repository.context;
+using Microsoft.OpenApi.Models;
+
 namespace EmployeeManagement
 {
     public class Startup
@@ -43,7 +46,7 @@ namespace EmployeeManagement
             {
                 app.UseDeveloperExceptionPage();
                 app.UseSwagger();
-                app.UseSwaggerUI(c => { c.SwaggerEndpoint("/swagger/v1/swagger.json", "myapi v1"); });
+               app.UseSwaggerUI(c => { c.SwaggerEndpoint("/swagger/v1/swagger.json", "myapi v1"); });
             }
 
             else
