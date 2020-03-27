@@ -1,0 +1,13 @@
+C:\Users\ankit aryan\source\repos\Employee_Repository\bin\Debug\netcoreapp2.1\Employee_Repository.deps.json
+C:\Users\ankit aryan\source\repos\Employee_Repository\bin\Debug\netcoreapp2.1\Employee_Repository.runtimeconfig.json
+C:\Users\ankit aryan\source\repos\Employee_Repository\bin\Debug\netcoreapp2.1\Employee_Repository.runtimeconfig.dev.json
+C:\Users\ankit aryan\source\repos\Employee_Repository\bin\Debug\netcoreapp2.1\Employee_Repository.dll
+C:\Users\ankit aryan\source\repos\Employee_Repository\bin\Debug\netcoreapp2.1\Employee_Repository.pdb
+C:\Users\ankit aryan\source\repos\Employee_Repository\bin\Debug\netcoreapp2.1\EmployeeModel.dll
+C:\Users\ankit aryan\source\repos\Employee_Repository\bin\Debug\netcoreapp2.1\EmployeeModel.pdb
+C:\Users\ankit aryan\source\repos\Employee_Repository\obj\Debug\netcoreapp2.1\Employee_Repository.csprojAssemblyReference.cache
+C:\Users\ankit aryan\source\repos\Employee_Repository\obj\Debug\netcoreapp2.1\Employee_Repository.AssemblyInfoInputs.cache
+C:\Users\ankit aryan\source\repos\Employee_Repository\obj\Debug\netcoreapp2.1\Employee_Repository.AssemblyInfo.cs
+C:\Users\ankit aryan\source\repos\Employee_Repository\obj\Debug\netcoreapp2.1\Employee_Repository.csproj.CopyComplete
+C:\Users\ankit aryan\source\repos\Employee_Repository\obj\Debug\netcoreapp2.1\Employee_Repository.dll
+C:\Users\ankit aryan\source\repos\Employee_Repository\obj\Debug\netcoreapp2.1\Employee_Repository.pdb
