@@ -1,18 +1,52 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
+﻿
 namespace EmployeeModel
 {
-    class Model_Of_Employee
+    using System;
+    using System.Collections.Generic;
+    using System.ComponentModel.DataAnnotations;
+    using System.ComponentModel.DataAnnotations.Schema;
+    using System.Text;
+
+    /// <summary>
+    /// this is model class
+    /// </summary>
+    public class Model_Of_Employee
     {
+        /// <summary>
+        /// this private variable
+        /// </summary>
         private int id;
+
+        /// <summary>
+        /// this private variable
+        /// </summary>
         private string fname;
+
+        /// <summary>
+        /// this private variable
+        /// </summary>
         private string lname;
+
+        /// <summary>
+        /// this private variable
+        /// </summary>
         private string city;
+
+        /// <summary>
+        /// this private variable
+        /// </summary>
         private string address;
+
+        /// <summary>
+        /// this private variable
+        /// </summary>
         private string email;
 
+        /// <summary>
+        /// this is variable
+        /// </summary>
+        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
+        [Key]
         public int Id 
         {
             get
@@ -25,6 +59,9 @@ namespace EmployeeModel
             } 
         }
 
+        /// <summary>
+        /// this is variable
+        /// </summary>
         public string Fname
         {
             get
@@ -37,6 +74,9 @@ namespace EmployeeModel
             }
         }
 
+        /// <summary>
+        /// this is variable
+        /// </summary>
         public string Lname
         {
             get
@@ -49,6 +89,9 @@ namespace EmployeeModel
             }
         }
 
+        /// <summary>
+        /// this is variable
+        /// </summary>
         public string City
         {
             get
@@ -61,6 +104,9 @@ namespace EmployeeModel
             }
         }
 
+        /// <summary>
+        /// this is variable
+        /// </summary>
         public string Address
         {
             get
@@ -73,6 +119,9 @@ namespace EmployeeModel
             }
         }
 
+        /// <summary>
+        /// this is variable
+        /// </summary>
         public string Email
         {
             get
