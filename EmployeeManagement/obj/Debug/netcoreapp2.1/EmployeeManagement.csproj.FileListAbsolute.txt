@@ -19,3 +19,5 @@ C:\Users\ankit aryan\source\repos\EmployeeManagement\bin\Debug\netcoreapp2.1\Emp
 C:\Users\ankit aryan\source\repos\EmployeeManagement\obj\Debug\netcoreapp2.1\EmployeeManagement.csproj.CopyComplete
 C:\Users\ankit aryan\source\repos\EmployeeManagement\obj\Debug\netcoreapp2.1\EmployeeManagement.dll
 C:\Users\ankit aryan\source\repos\EmployeeManagement\obj\Debug\netcoreapp2.1\EmployeeManagement.pdb
+C:\Users\ankit aryan\source\repos\EmployeeManagement\bin\Debug\netcoreapp2.1\Enployee_Manager.dll
+C:\Users\ankit aryan\source\repos\EmployeeManagement\bin\Debug\netcoreapp2.1\Enployee_Manager.pdb

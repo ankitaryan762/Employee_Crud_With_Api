@@ -14,6 +14,7 @@ using Microsoft.Extensions.Options;
 using Employee_Repository;
 using Employee_Repository.context;
 using Microsoft.OpenApi.Models;
+using Enployee_Manager;
 
 namespace EmployeeManagement
 {
@@ -32,6 +33,10 @@ namespace EmployeeManagement
             services.AddDbContextPool<EmpDbContext>(options => options.UseSqlServer(Configuration.GetConnectionString("EmpDbContext")));
 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
+
+            services.AddTransient<IEmp_Repository, Emp_Repository>();
+
+            services.AddTransient<IEmpManager, EmpManager>();
 
             services.AddSwaggerGen(c =>
             {
