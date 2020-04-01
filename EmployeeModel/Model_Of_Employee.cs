@@ -1,4 +1,10 @@
-﻿
+﻿// --------------------------------------------------------------------------------------------------------------------
+// <copyright file=Model_Of_Employee.cs" company="Bridgelabz">
+//   Copyright © 2020 Company="BridgeLabz"
+// </copyright>
+// <creator name="Ankit Aryan"/>
+// --------------------------------------------------------------------------------------------------------------------
+
 namespace EmployeeModel
 {
     using System;

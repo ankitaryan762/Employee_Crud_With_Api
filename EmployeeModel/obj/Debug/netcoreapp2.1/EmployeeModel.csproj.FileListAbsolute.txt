@@ -3,6 +3,7 @@ C:\Users\ankit aryan\source\repos\EmployeeModel\bin\Debug\netcoreapp2.1\Employee
 C:\Users\ankit aryan\source\repos\EmployeeModel\bin\Debug\netcoreapp2.1\EmployeeModel.runtimeconfig.dev.json
 C:\Users\ankit aryan\source\repos\EmployeeModel\bin\Debug\netcoreapp2.1\EmployeeModel.dll
 C:\Users\ankit aryan\source\repos\EmployeeModel\bin\Debug\netcoreapp2.1\EmployeeModel.pdb
+C:\Users\ankit aryan\source\repos\EmployeeModel\obj\Debug\netcoreapp2.1\EmployeeModel.csprojAssemblyReference.cache
 C:\Users\ankit aryan\source\repos\EmployeeModel\obj\Debug\netcoreapp2.1\EmployeeModel.AssemblyInfoInputs.cache
 C:\Users\ankit aryan\source\repos\EmployeeModel\obj\Debug\netcoreapp2.1\EmployeeModel.AssemblyInfo.cs
 C:\Users\ankit aryan\source\repos\EmployeeModel\obj\Debug\netcoreapp2.1\EmployeeModel.dll
