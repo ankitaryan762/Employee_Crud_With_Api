@@ -1,4 +1,10 @@
-﻿
+﻿// --------------------------------------------------------------------------------------------------------------------
+// <copyright file=EmployeeController.cs" company="Bridgelabz">
+//   Copyright © 2020 Company="BridgeLabz"
+// </copyright>
+// <creator name="Ankit Aryan"/>
+// --------------------------------------------------------------------------------------------------------------------
+
 namespace EmployeeManagement.Controllers
 {
     using System;
@@ -9,6 +15,7 @@ namespace EmployeeManagement.Controllers
     using Enployee_Manager;
     using Microsoft.AspNetCore.Http;
     using Microsoft.AspNetCore.Mvc;
+    using Serilog;
 
     /// <summary>
     /// This is controller 
@@ -47,6 +54,7 @@ namespace EmployeeManagement.Controllers
             }
             else
             {
+                Log.Error("This is a Bad Request");
                 return this.BadRequest();
             }
         }
@@ -60,6 +68,7 @@ namespace EmployeeManagement.Controllers
         [Route("Api/DeleteEmployee")]
         public Model_Of_Employee DeleteEmployee(int id)
         {
+            Log.Information("Employee Deleted");
             return this.manager.DeleteEmployee(id);
         }
 
@@ -72,6 +81,7 @@ namespace EmployeeManagement.Controllers
         [HttpGet]
         public Model_Of_Employee GetEmployee(int id)
         {
+            Log.Information("Employee details are loaded");
             return this.manager.GetEmployee(id);
         }
 
@@ -87,10 +97,12 @@ namespace EmployeeManagement.Controllers
             var result = await this.manager.UpdateEmployee(employeeChanges);
             if (result == 1)
             {
+                Log.Information("Existing Employee Updated");
                 return this.Ok(employeeChanges);
             }
             else
             {
+                Log.Error("This is a Bad Request");
                 return this.BadRequest();
             }
         }
@@ -103,6 +115,7 @@ namespace EmployeeManagement.Controllers
         [HttpGet]
         public IEnumerable<Model_Of_Employee> GetAllEmployees()
         {
+            Log.Information("All Employees loaded");
             return this.manager.GetAllEmployees();
         }
     }
