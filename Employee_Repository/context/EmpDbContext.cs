@@ -1,4 +1,11 @@
-﻿namespace Employee_Repository.context
+﻿// --------------------------------------------------------------------------------------------------------------------
+// <copyright file=EmpDbContext.cs" company="Bridgelabz">
+//   Copyright © 2020 Company="BridgeLabz"
+// </copyright>
+// <creator name="Ankit Aryan"/>
+// --------------------------------------------------------------------------------------------------------------------
+
+namespace Employee_Repository.context
 {
     using Microsoft.EntityFrameworkCore;
     using System;
