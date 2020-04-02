@@ -1,0 +1,130 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\ankit aryan\\Desktop\\Employee_Crud_With_Api\\NUnit-QualityMeasurement\\NUnit-QualityMeasurement.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\ankit aryan\\Desktop\\Employee_Crud_With_Api\\NUnit-QualityMeasurement\\NUnit-QualityMeasurement.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\ankit aryan\\Desktop\\Employee_Crud_With_Api\\NUnit-QualityMeasurement\\NUnit-QualityMeasurement.csproj",
+        "projectName": "NUnit-QualityMeasurement",
+        "projectPath": "C:\\Users\\ankit aryan\\Desktop\\Employee_Crud_With_Api\\NUnit-QualityMeasurement\\NUnit-QualityMeasurement.csproj",
+        "packagesPath": "C:\\Users\\ankit aryan\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\ankit aryan\\Desktop\\Employee_Crud_With_Api\\NUnit-QualityMeasurement\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\ankit aryan\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {
+              "C:\\Users\\ankit aryan\\Desktop\\Employee_Crud_With_Api\\QualityMeasurement\\QualityMeasurement.csproj": {
+                "projectPath": "C:\\Users\\ankit aryan\\Desktop\\Employee_Crud_With_Api\\QualityMeasurement\\QualityMeasurement.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "dependencies": {
+            "Microsoft.NET.Test.Sdk": {
+              "target": "Package",
+              "version": "[16.4.0, )"
+            },
+            "NUnit3TestAdapter": {
+              "target": "Package",
+              "version": "[3.15.1, )"
+            },
+            "nunit": {
+              "target": "Package",
+              "version": "[3.12.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\ankit aryan\\Desktop\\Employee_Crud_With_Api\\QualityMeasurement\\QualityMeasurement.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\ankit aryan\\Desktop\\Employee_Crud_With_Api\\QualityMeasurement\\QualityMeasurement.csproj",
+        "projectName": "QualityMeasurement",
+        "projectPath": "C:\\Users\\ankit aryan\\Desktop\\Employee_Crud_With_Api\\QualityMeasurement\\QualityMeasurement.csproj",
+        "packagesPath": "C:\\Users\\ankit aryan\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\ankit aryan\\Desktop\\Employee_Crud_With_Api\\QualityMeasurement\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\ankit aryan\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
