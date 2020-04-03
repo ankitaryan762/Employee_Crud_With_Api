@@ -34,6 +34,14 @@ namespace NUnit_QualityMeasurement
             Assert.IsTrue(result);
         }
 
+        [Test]
+        public void Perform_TestCase_Type_Check()
+        {
+            Feet feet = new Feet();
+            bool result = feet.Equals(new Feet());
+            Assert.IsTrue(result);
+        }
+
 
 
     }
