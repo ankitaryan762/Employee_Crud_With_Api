@@ -50,6 +50,13 @@ namespace NUnit_QualityMeasurement
             Assert.AreEqual(10, actual);
         }
 
+        [Test]
+        public void Give_0_Inch_and_0_Inch_Should_Return_Equal()
+        {
+            Inch inch = new Inch(10);
+            double result = inch.CheckForEqualValue();
+            Assert.AreEqual(10, result);
+        }
 
     }
 }
