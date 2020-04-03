@@ -42,6 +42,13 @@ namespace NUnit_QualityMeasurement
             Assert.IsTrue(result);
         }
 
+        [Test]
+        public void Perform_Test_Value_Check()
+        {
+            Feet feet = new Feet(10);
+            double actual = feet.CheckForEqualValue();
+            Assert.AreEqual(10, actual);
+        }
 
 
     }
