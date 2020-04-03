@@ -13,7 +13,7 @@ namespace NUnit_QualityMeasurement
         [Test]
         public void Given_0_Feet_WhenAnalyze_Should_Return_Equal()
         {
-            Feet feet = new Feet(10);
+            UnitCheck feet = new UnitCheck("Feet", 10);
             double actual = feet.CheckForEqualValue();
             Assert.AreEqual(10, actual);
         }
@@ -21,7 +21,7 @@ namespace NUnit_QualityMeasurement
         [Test]
         public void PerForm_TestCase_Null_Check()
         {
-            Feet feet = new Feet();
+            UnitCheck feet = new UnitCheck("Feet");
             bool result = feet.Equals(null);
             Assert.IsTrue(result);
         }
@@ -29,7 +29,7 @@ namespace NUnit_QualityMeasurement
         [Test]
         public void Perform_TestCase_Ref_Check()
         {
-            Feet feet = new Feet();
+            UnitCheck feet = new UnitCheck("Feet");
             bool result = feet.Equals(feet);
             Assert.IsTrue(result);
         }
@@ -37,15 +37,15 @@ namespace NUnit_QualityMeasurement
         [Test]
         public void Perform_TestCase_Type_Check()
         {
-            Feet feet = new Feet();
-            bool result = feet.Equals(new Feet());
+            UnitCheck feet = new UnitCheck("Feet");
+            bool result = feet.Equals(new UnitCheck());
             Assert.IsTrue(result);
         }
 
         [Test]
         public void Perform_Test_Value_Check()
         {
-            Feet feet = new Feet(10);
+            UnitCheck feet = new UnitCheck("Feet", 10);
             double actual = feet.CheckForEqualValue();
             Assert.AreEqual(10, actual);
         }
@@ -53,15 +53,15 @@ namespace NUnit_QualityMeasurement
         [Test]
         public void Give_0_Inch_Return_Equal()
         {
-            Inch inch = new Inch(10);
+            UnitCheck inch = new UnitCheck("Inch", 15);
             double result = inch.CheckForEqualValue();
-            Assert.AreEqual(10, result);
+            Assert.AreEqual(15, result);
         }
 
         [Test]
         public void PerForm_Test_For_Inch_Null_Check()
         {
-            Inch inch = new Inch (0);
+            UnitCheck inch = new UnitCheck("Inch", 0);
             bool result = inch.Equals(null);
             Assert.IsTrue(result);
         }
@@ -69,7 +69,7 @@ namespace NUnit_QualityMeasurement
         [Test]
         public void Perform_Test_Inch_Ref_Check()
         {
-            Inch inch = new Inch();
+            UnitCheck inch = new UnitCheck("Inch");
             bool result = inch.Equals(inch);
             Assert.IsTrue(result);
         }
@@ -77,17 +77,17 @@ namespace NUnit_QualityMeasurement
         [Test]
         public void Perform_Test_Inch_Type_Check()
         {
-            Inch inch = new Inch();
-            bool result = inch.Equals(new Inch());
+            UnitCheck inch = new UnitCheck("Inch");
+            bool result = inch.Equals(new UnitCheck());
             Assert.IsTrue(result);
         }
 
         [Test]
         public void Perform_Test__Ref_Check()
         {
-            Inch inch = new Inch(10);
+            UnitCheck inch = new UnitCheck("Inch", 16);
             double result = inch.CheckForEqualValue();
-            Assert.AreEqual(10, result);
+            Assert.AreEqual(16, result);
         }
 
     }
