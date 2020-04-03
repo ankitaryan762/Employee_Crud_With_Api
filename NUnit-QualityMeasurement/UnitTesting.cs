@@ -1,4 +1,5 @@
 using NUnit.Framework;
+using QualityMeasurement;
 
 namespace NUnit_QualityMeasurement
 {
@@ -10,9 +11,22 @@ namespace NUnit_QualityMeasurement
         }
 
         [Test]
-        public void Test1()
+        public void Given_0_Feet_WhenAnalyze_Should_Return_Equal()
         {
-            Assert.Pass();
+            Feet feet = new Feet(10);
+            double actual = feet.CheckForEqualValue();
+            Assert.AreEqual(10, actual);
         }
+
+        [Test]
+        public void PerForm_TestCase_For_Null_Check()
+        {
+            Feet feet = new Feet();
+            bool result = feet.Equals(null);
+            Assert.IsTrue(result);
+        }
+
+
+
     }
 }
