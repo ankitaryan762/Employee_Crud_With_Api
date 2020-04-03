@@ -74,5 +74,13 @@ namespace NUnit_QualityMeasurement
             Assert.IsTrue(result);
         }
 
+        [Test]
+        public void Perform_Test_Inch_Type_Check()
+        {
+            Inch inch = new Inch();
+            bool result = inch.Equals(new Inch());
+            Assert.IsTrue(result);
+        }
+
     }
 }
