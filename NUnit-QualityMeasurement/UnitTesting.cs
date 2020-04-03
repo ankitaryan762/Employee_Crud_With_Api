@@ -59,10 +59,18 @@ namespace NUnit_QualityMeasurement
         }
 
         [Test]
-        public void PerForm_Test_TC1_8_For_Equality_Null_Check()
+        public void PerForm_Test_For_Inch_Null_Check()
         {
             Inch inch = new Inch (0);
             bool result = inch.Equals(null);
+            Assert.IsTrue(result);
+        }
+
+        [Test]
+        public void Perform_Test_Inch_Ref_Check()
+        {
+            Inch inch = new Inch();
+            bool result = inch.Equals(inch);
             Assert.IsTrue(result);
         }
 
