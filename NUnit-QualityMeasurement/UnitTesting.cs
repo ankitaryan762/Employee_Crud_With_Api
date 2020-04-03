@@ -82,5 +82,13 @@ namespace NUnit_QualityMeasurement
             Assert.IsTrue(result);
         }
 
+        [Test]
+        public void Perform_Test__Ref_Check()
+        {
+            Inch inch = new Inch(10);
+            double result = inch.CheckForEqualValue();
+            Assert.AreEqual(10, result);
+        }
+
     }
 }
