@@ -19,7 +19,7 @@ namespace NUnit_QualityMeasurement
         }
 
         [Test]
-        public void PerForm_TestCase_For_Null_Check()
+        public void PerForm_TestCase_Null_Check()
         {
             Feet feet = new Feet();
             bool result = feet.Equals(null);
