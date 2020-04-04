@@ -178,5 +178,15 @@ namespace NUnit_QualityMeasurement
             bool actual = gram.Equals(new Gram());
             Assert.IsTrue(actual);
         }
+
+        [Test]
+        public void GivenValueTo_GramClass_WhenAnalyse_ReturnEqual()
+        {
+            Gram gram = new Gram(10);
+            double actual = gram.CheckForEqualValue();
+            WeightConversion weightConversion = new WeightConversion("Gram", 10);
+            double expected = weightConversion.CheckForEqualValue();
+            Assert.AreEqual(expected, actual);
+        }
     }
 }
