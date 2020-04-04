@@ -163,6 +163,12 @@ namespace NUnit_QualityMeasurement
             bool actual = gram.Equals(null);
             Assert.IsTrue(actual);
         }
-
+        [Test]
+        public void GivenReferenceTo_GramClassEqualsMethod_WhenAnalyse_ReturnTrue()
+        {
+            Gram gram = new Gram();
+            bool actual = gram.Equals(gram);
+            Assert.IsTrue(actual);
+        }
     }
 }
