@@ -118,5 +118,16 @@ namespace NUnit_QualityMeasurement
             Assert.AreNotEqual(expected, actual);
         }
 
+        [Test]
+        public void Compare_1inch_Not_Equal_to_1ft_return_False()
+        {
+            LengthConversion lengthConversion = new LengthConversion("Inch", 1);
+            Inch inch = new Inch(1);
+            double expected = inch.CheckForEqualValue();
+            double actual = lengthConversion.ConvertInchToFeet();
+            Assert.AreNotEqual(expected, actual);
+        }
+
+
     }
 }
