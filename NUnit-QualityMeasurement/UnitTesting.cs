@@ -206,5 +206,14 @@ namespace NUnit_QualityMeasurement
             bool actual = kilogram.Equals(null);
             Assert.IsTrue(actual);
         }
+
+        [Test]
+        public void GivenReferenceTo_KiloGramClassEqualsMethod_WhenAnalyse_ReturnTrue()
+        {
+            Kilogram kilogram = new Kilogram(0);
+            bool actual = kilogram.Equals(kilogram);
+            Assert.IsTrue(actual);
+        }
+
     }
 }
