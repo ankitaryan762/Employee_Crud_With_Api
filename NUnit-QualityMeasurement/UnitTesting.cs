@@ -13,81 +13,71 @@ namespace NUnit_QualityMeasurement
         [Test]
         public void Given_0_Feet_WhenAnalyze_Should_Return_Equal()
         {
-            UnitCheck feet = new UnitCheck("Feet", 10);
-            double actual = feet.CheckForEqualValue();
-            Assert.AreEqual(10, actual);
+            LengthConversion lengthConversion = new LengthConversion("Feet", 10);
+            Feet feet = new Feet(10);
+            double expected = feet.CheckForEqualValue();
+            double actual = lengthConversion.CheckForEqualValue();
+            Assert.AreEqual(expected, actual);
         }
 
         [Test]
         public void PerForm_TestCase_Null_Check()
         {
-            UnitCheck feet = new UnitCheck("Feet");
-            bool result = feet.Equals(null);
+            LengthConversion lengthConversion = new LengthConversion("Feet");
+            bool result = lengthConversion.Equals(null);
             Assert.IsTrue(result);
         }
 
         [Test]
         public void Perform_TestCase_Ref_Check()
         {
-            UnitCheck feet = new UnitCheck("Feet");
-            bool result = feet.Equals(feet);
+            LengthConversion lengthConversion = new LengthConversion("Feet");
+            bool result = lengthConversion.Equals(lengthConversion);
             Assert.IsTrue(result);
         }
 
         [Test]
         public void Perform_TestCase_Type_Check()
         {
-            UnitCheck feet = new UnitCheck("Feet");
-            bool result = feet.Equals(new UnitCheck());
+            LengthConversion lengthConversion = new LengthConversion("Feet");
+            bool result = lengthConversion.Equals(new LengthConversion());
             Assert.IsTrue(result);
         }
 
         [Test]
         public void Perform_Test_Value_Check()
         {
-            UnitCheck feet = new UnitCheck("Feet", 10);
-            double actual = feet.CheckForEqualValue();
-            Assert.AreEqual(10, actual);
+            LengthConversion lengthConversion = new LengthConversion("Feet", 10);
+            Feet feet = new Feet(10);
+            double actual = lengthConversion.CheckForEqualValue();
+            double expected = feet.CheckForEqualValue();
+            Assert.AreEqual(expected, actual);
         }
 
         [Test]
         public void Give_0_Inch_Return_Equal()
         {
-            UnitCheck inch = new UnitCheck("Inch", 15);
-            double result = inch.CheckForEqualValue();
-            Assert.AreEqual(15, result);
+            LengthConversion lengthConversion = new LengthConversion("Inch", 55);
+            Inch inch = new Inch(55);
+            double expected = inch.CheckForEqualValue();
+            double actual = lengthConversion.CheckForEqualValue();
+            Assert.AreEqual(expected, actual);
         }
 
         [Test]
         public void PerForm_Test_For_Inch_Null_Check()
         {
-            UnitCheck inch = new UnitCheck("Inch", 0);
-            bool result = inch.Equals(null);
+            LengthConversion lengthConversion = new LengthConversion("Inch", 0);
+            bool result = lengthConversion.Equals(null);
             Assert.IsTrue(result);
         }
 
         [Test]
-        public void Perform_Test_Inch_Ref_Check()
+        public void Perform_Test_Ref_Check()
         {
-            UnitCheck inch = new UnitCheck("Inch");
-            bool result = inch.Equals(inch);
+            LengthConversion lengthConversion = new LengthConversion("Inch");
+            bool result = lengthConversion.Equals(lengthConversion);
             Assert.IsTrue(result);
-        }
-
-        [Test]
-        public void Perform_Test_Inch_Type_Check()
-        {
-            UnitCheck inch = new UnitCheck("Inch");
-            bool result = inch.Equals(new UnitCheck());
-            Assert.IsTrue(result);
-        }
-
-        [Test]
-        public void Perform_Test__Ref_Check()
-        {
-            UnitCheck inch = new UnitCheck("Inch", 16);
-            double result = inch.CheckForEqualValue();
-            Assert.AreEqual(16, result);
         }
 
     }
