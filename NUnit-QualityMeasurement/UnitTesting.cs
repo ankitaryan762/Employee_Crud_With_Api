@@ -188,5 +188,15 @@ namespace NUnit_QualityMeasurement
             double expected = weightConversion.CheckForEqualValue();
             Assert.AreEqual(expected, actual);
         }
+
+        [Test]
+        public void GivenValueIn_KiloGramClassFunction_WhenAnalyse_ReturnEqual()
+        {
+            Kilogram kilogram = new Kilogram(0);
+            WeightConversion weightConversion = new WeightConversion();
+            double actual = kilogram.CheckForEqualValue();
+            double expected = weightConversion.CheckForEqualValue();
+            Assert.AreEqual(expected, actual);
+        }
     }
 }
