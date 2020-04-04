@@ -80,5 +80,14 @@ namespace NUnit_QualityMeasurement
             Assert.IsTrue(result);
         }
 
+        [Test]
+        public void Perform_Test_TC1_10_For_Equality_Type_Check()
+        {
+            LengthConversion lengthConversion = new LengthConversion("Inch");
+            bool result = lengthConversion.Equals(new LengthConversion());
+            Assert.IsTrue(result);
+        }
+
+
     }
 }
