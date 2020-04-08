@@ -76,5 +76,10 @@ namespace Enployee_Manager
         {
             return this.emp_Repository.UpdateEmployee(employeeChanges);
         }
+
+        public bool Login(string email,string password)
+        {
+            return this.emp_Repository.Login(email,password);
+        }
     }
 }

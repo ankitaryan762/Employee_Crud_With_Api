@@ -50,5 +50,7 @@ namespace Enployee_Manager
         /// <param name="id"></param>
         /// <returns></returns>
         Model_Of_Employee DeleteEmployee(int id);
+
+        bool Login(string email, string password);
     }
 }
