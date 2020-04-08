@@ -14,6 +14,7 @@ namespace Employee_Repository
     using Microsoft.EntityFrameworkCore;
     using System.Text;
     using System.Threading.Tasks;
+    using System.Linq;
 
     /// <summary>
     /// This is implementation class of Repository interface
@@ -93,6 +94,16 @@ namespace Employee_Repository
             employee.State = EntityState.Modified;
             var result = empDbContext.SaveChangesAsync();
             return result;
+        }
+
+        public bool Login(string email,string password) 
+        {
+            var result = empDbContext.Employees.Where(id => id.Email == email && id.Password == password);
+            if (result != null)
+            {
+                return true;
+            }
+            return false;
         }
     }
 }
