@@ -118,5 +118,22 @@ namespace EmployeeManagement.Controllers
             Log.Information("All Employees loaded");
             return this.manager.GetAllEmployees();
         }
+
+        /// <summary>
+        /// this is method
+        /// </summary>
+        /// <returns></returns>
+        [Route("Login")]
+        [HttpPost]
+        public IActionResult Login(string email,string password)
+        {
+            var result = this.manager.Login(email, password);
+
+            if (result)
+            {
+                return Ok(email);
+            }
+            return this.BadRequest();
+        }
     }
 }

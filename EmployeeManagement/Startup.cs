@@ -1,4 +1,4 @@
-﻿// --------------------------------------------------------------------------------------------------------------------
+﻿// ---------------------------------------------------------------------------------------------------------------------
 // <copyright file=Startup.cs" company="Bridgelabz">
 //   Copyright © 2020 Company="BridgeLabz"
 // </copyright>
@@ -30,7 +30,7 @@ namespace EmployeeManagement
         {
             Configuration = configuration;
         }
-
+        //
         public IConfiguration Configuration { get; }
 
         // This method gets called by the runtime. Use this method to add services to the container.
@@ -65,7 +65,16 @@ namespace EmployeeManagement
                 app.UseHsts();
             }
             app.UseHttpsRedirection();
-            app.UseMvc();
+            //app.UseMvc();
+
+            app.UseStaticFiles();
+            app.UseMvc(routes =>
+            {
+                routes.MapRoute(
+                    name: "default",
+                    template: "{controller=EmployeeController}/{action=Login}/{id?}"
+                    );
+            });
         }
     }
 }

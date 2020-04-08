@@ -2,9 +2,9 @@
 
   <PropertyGroup>
     <TargetFramework>netcoreapp2.1</TargetFramework>
-    <ApplicationIcon />
+    <ApplicationIcon></ApplicationIcon>
     <OutputType>Exe</OutputType>
-    <StartupObject />
+    <StartupObject>EmployeeManagement.Program</StartupObject>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
