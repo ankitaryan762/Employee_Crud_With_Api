@@ -49,6 +49,11 @@ namespace EmployeeModel
         private string email;
 
         /// <summary>
+        /// this private variable
+        /// </summary>
+        private string password;
+
+        /// <summary>
         /// this is variable
         /// </summary>
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
@@ -139,6 +144,18 @@ namespace EmployeeModel
                 this.email = value;
             }
         }
-        
+
+        public string Password
+        {
+            get
+            {
+                return this.password;
+            }
+            set
+            {
+                this.password = value;
+            }
+        }
+
     }
 }
