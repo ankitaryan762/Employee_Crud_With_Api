@@ -10,6 +10,9 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
+using Microsoft.OpenApi.Models;
+using QuantityMeasurement_Manager;
+using QuantityMeasurment_Repository;
 
 namespace QuantityMeasurement_BackendCode
 {
@@ -26,6 +29,14 @@ namespace QuantityMeasurement_BackendCode
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
+
+            services.AddTransient<IManager, Manager>();
+            services.AddTransient<IRepository, Repository>();
+
+            services.AddSwaggerGen(c =>
+            {
+                c.SwaggerDoc("v1", new OpenApiInfo { Title = "QuantiyMeasurement_Backend", Version = "v1" });
+            });
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -34,6 +45,12 @@ namespace QuantityMeasurement_BackendCode
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
+                app.UseSwagger();
+                app.UseSwaggerUI(c =>
+                {
+                    c.SwaggerEndpoint("/swagger/v1/swagger.json", "MyApi V1");
+                });
+
             }
             else
             {
@@ -41,7 +58,18 @@ namespace QuantityMeasurement_BackendCode
             }
 
             app.UseHttpsRedirection();
-            app.UseMvc();
+
+            //app.UseMvc();
+            app.UseStaticFiles();
+            app.UseMvc(routes =>
+            {
+                routes.MapRoute(
+                    name: "default",
+                    template: "{controller=ValuesController}/{action=FeettoInch}/{id?}"
+                    );
+            });
+
         }
+
     }
 }

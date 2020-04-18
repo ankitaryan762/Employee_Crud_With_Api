@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
+using QuantityMeasurement_Manager;
+using QuantityMeasurement_Model;
 
 namespace QuantityMeasurement_BackendCode.Controllers
 {
@@ -10,36 +12,92 @@ namespace QuantityMeasurement_BackendCode.Controllers
     [ApiController]
     public class ValuesController : ControllerBase
     {
-        // GET api/values
-        [HttpGet]
-        public ActionResult<IEnumerable<string>> Get()
-        {
-            return new string[] { "value1", "value2" };
-        }
+            public IManager manager;
 
-        // GET api/values/5
-        [HttpGet("{id}")]
-        public ActionResult<string> Get(int id)
-        {
-            return "value";
-        }
+            public ValuesController(IManager manager)
+            {
+                this.manager = manager;
+            }
 
-        // POST api/values
-        [HttpPost]
-        public void Post([FromBody] string value)
-        {
-        }
 
-        // PUT api/values/5
-        [HttpPut("{id}")]
-        public void Put(int id, [FromBody] string value)
-        {
-        }
+            // GET api/values
+            [Route("FeettoInch")]
+            [HttpPost]
+            public IActionResult FeettoInch(Model value)
+            {
+                var result = this.manager.FeettoInch(value);
 
-        // DELETE api/values/5
-        [HttpDelete("{id}")]
-        public void Delete(int id)
-        {
+                if (result >= 0)
+                {
+                    return this.Ok(result);
+                }
+                return this.BadRequest();
+            }
+
+
+            [Route("InchToFeet")]
+            [HttpPost]
+            public IActionResult InchToFeet(Conversion value)
+            {
+                var result = this.manager.InchToFeet(value);
+
+                if (result >= 0)
+                {
+                    return this.Ok(result);
+                }
+                return this.BadRequest();
+            }
+
+            [Route("MetertoCentimeter")]
+            [HttpPost]
+            public IActionResult MetertoCentimeter(Conversion value)
+            {
+                var result = this.manager.MetertoCentimeter(value);
+
+                if (result >= 0)
+                {
+                    return this.Ok(result);
+                }
+                return this.BadRequest();
+            }
+
+            [Route("CentimetertoMeter")]
+            [HttpPost]
+            public IActionResult CentimetertoMeter(Conversion value)
+            {
+                var result = this.manager.CentimetertoMeter(value);
+
+                if (result >= 0)
+                {
+                    return this.Ok(result);
+                }
+                return this.BadRequest();
+            }
+
+            [Route("KgtoGm")]
+            [HttpPost]
+            public IActionResult KgtoGm(Conversion value)
+            {
+                var result = this.manager.KgtoGm(value);
+
+                if (result >= 0)
+                {
+                    return this.Ok(result);
+                }
+                return this.BadRequest();
+            }
+
+            [Route("GmtoKg")]
+            [HttpPost]
+            public IActionResult GmtoKg(Conversion value)
+            {
+                var result = this.manager.GmtoKg(value);
+
+                if (result >= 0)
+                {
+                    return this.Ok(result);
+                }
+                return this.BadRequest();
+            }
         }
-    }
 }
