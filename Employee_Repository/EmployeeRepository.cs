@@ -58,7 +58,7 @@ namespace Employee_Repository
             if (employee != null)
             {
                 empDbContext.Employees.Remove(employee);
-                empDbContext.SaveChanges();
+                empDbContext.SaveChangesAsync();
             }
             return employee;
 

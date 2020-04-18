@@ -1,55 +1,57 @@
-?<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
 <head>
-    <title>Bootstrap Logic</title>
-<link href="global.css" type="text/css" rel="stylesheet">
+    <title>Login Page</title>
+    <link href="global.css" type="text/css" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="utf-8" />
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
-    
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
 </head>
 
 <body style="background-image:url(image.jpg)">
-<div class="container-fluid bg">
-<div class="row">
-<div class="col-md-4 col-sm-4 col-xs-12"></div>
-<div class="col-md-4 col-sm-4 col-xs-12">
+    <div class="container-fluid bg">
+        <div class="row">
+            <div class="col-md-4 col-sm-4 col-xs-12"></div>
+            <div class="col-md-4 col-sm-4 col-xs-12">
 
-<form action="" class ="form-container" name="myForm" id="f" onsubmit="return validate();">
-<Center><b id="login-name">
-<font color="blue">Login Here</font>
-</b></Center>
-  <div class="form-group">
-    <label for="exampleInputEmail1">
-<font color="white">Email</font>
-</label>
-    <input type="email" class="form-control" id="inputEmail" placeholder="Email" onchange="checkForm()"/>
-  </div>
+                <form action="" class="form-container" name="myForm" id="f" onsubmit="return validate();">
+                    <Center>
+                        <b id="login-name">
+                            <font color="blue">Login Here</font>
+                        </b>
+                    </Center>
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">
+                            <font color="white">Email</font>
+                        </label>
+                        <input type="email" class="form-control" id="inputEmail" placeholder="Email" onchange="checkForm()" />
+                    </div>
 
-  <div class="form-group">
-    <label for="exampleInputPassword1"><font color="white">Password</font></label>
-    <input type="password" class="form-control" id="inputPassword" placeholder="password" onchange="checkForm()"/>
-  </div>
+                    <div class="form-group">
+                        <label for="exampleInputPassword1"><font color="white">Password</font></label>
+                        <input type="password" class="form-control" id="inputPassword" placeholder="password" onchange="checkForm()" />
+                    </div>
 
-  <div class="checkbox">
-       <label>
-            <input type="checkbox"><font color="white">Remember me</font>
-       </label>
-  </div>
+                    <div class="checkbox">
+                        <label>
+                            <input type="checkbox"><font color="white">Remember me</font>
+                        </label>
+                    </div>
 
-  <button type="submit" class="btn btn-success btn-block" id="btnSubmit" disabled>Submit</button>
-</form>
+                    <button type="submit" class="btn btn-success btn-block" id="btnSubmit" disabled>Submit</button>
+                </form>
 
-</div>
-<div class="col-md-4 col-sm-4 col-xs-12"></div>
-</div>
-</div>
+            </div>
+            <div class="col-md-4 col-sm-4 col-xs-12"></div>
+        </div>
+    </div>
 
- <script>
+    <script>
         checkForm = () => {
             var canSubmit = true;
             if (document.getElementById("inputEmail").value == "") {
@@ -68,7 +70,7 @@
 
         validate = () => {
             if (document.myForm.inputEmail.value.length <= 3) {
-                document.getElementById("error").innerHTML = "please enter your correct username";
+                document.getElementById("error").innerHTML = "please enter your correct Email";
                 document.myForm.inputEmail.focus();
                 return false;
             }
@@ -79,6 +81,44 @@
             }
             return true;
         }
+        $(function () {
+            $("#btnSubmit").click(function () {
+                //debugger;
+                //var formData = new FormData();
+                //formData.append("email", $("#username").val());
+                //formData.append("password", $("#password").val());
+                event.preventDefault();
+                var formData = {
+                    "email": document.getElementById("inputEmail").value,
+                    "password": document.getElementById("inputPassword").value
+                }
+                //validate();
+                //console.log("------------------>>>", formData);
+                var data = JSON.stringify(formData);
+                //console.log("<<<------------------>>>", data);
+                $.ajax({
+                    url: "api/employee/Api/Login",
+                    type: 'POST',
+                    cache: false,
+                    contentType: 'application/JSON',
+                    processData: false,
+                    data: data,
+                    success: function (response) {
+
+                        console.log(response);
+                        if (response != null) {
+                            window.location = 'https://localhost:44304/HomePage.html'
+                            alert("Employee Verified Sucessfully");
+                        }
+                        else {
+                            alert("error in login");
+                        }
+                    }
+                });
+            });
+        });
+        
+
     </script>
 
 </body>

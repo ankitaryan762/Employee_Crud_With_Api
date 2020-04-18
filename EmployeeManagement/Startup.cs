@@ -65,6 +65,11 @@ namespace EmployeeManagement
                 app.UseHsts();
             }
             app.UseHttpsRedirection();
+            app.UseCors(builder => { 
+                builder.AllowAnyOrigin();
+                builder.AllowAnyHeader();
+                builder.AllowAnyMethod();
+            });
             //app.UseMvc();
 
             app.UseStaticFiles();

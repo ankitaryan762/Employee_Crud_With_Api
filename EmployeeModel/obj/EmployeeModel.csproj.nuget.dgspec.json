@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ankit aryan\\source\\repos\\EmployeeModel\\EmployeeModel.csproj": {}
+    "C:\\Users\\ankit aryan\\source\\Employee_Crud_With_Api\\EmployeeModel\\EmployeeModel.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ankit aryan\\source\\repos\\EmployeeModel\\EmployeeModel.csproj": {
+    "C:\\Users\\ankit aryan\\source\\Employee_Crud_With_Api\\EmployeeModel\\EmployeeModel.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ankit aryan\\source\\repos\\EmployeeModel\\EmployeeModel.csproj",
+        "projectUniqueName": "C:\\Users\\ankit aryan\\source\\Employee_Crud_With_Api\\EmployeeModel\\EmployeeModel.csproj",
         "projectName": "EmployeeModel",
-        "projectPath": "C:\\Users\\ankit aryan\\source\\repos\\EmployeeModel\\EmployeeModel.csproj",
+        "projectPath": "C:\\Users\\ankit aryan\\source\\Employee_Crud_With_Api\\EmployeeModel\\EmployeeModel.csproj",
         "packagesPath": "C:\\Users\\ankit aryan\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ankit aryan\\source\\repos\\EmployeeModel\\obj\\",
+        "outputPath": "C:\\Users\\ankit aryan\\source\\Employee_Crud_With_Api\\EmployeeModel\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\ankit aryan\\AppData\\Roaming\\NuGet\\NuGet.Config",

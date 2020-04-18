@@ -6649,11 +6649,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ankit aryan\\source\\repos\\Employee_Repository\\Employee_Repository.csproj",
+      "projectUniqueName": "C:\\Users\\ankit aryan\\source\\Employee_Crud_With_Api\\Employee_Repository\\Employee_Repository.csproj",
       "projectName": "Employee_Repository",
-      "projectPath": "C:\\Users\\ankit aryan\\source\\repos\\Employee_Repository\\Employee_Repository.csproj",
+      "projectPath": "C:\\Users\\ankit aryan\\source\\Employee_Crud_With_Api\\Employee_Repository\\Employee_Repository.csproj",
       "packagesPath": "C:\\Users\\ankit aryan\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ankit aryan\\source\\repos\\Employee_Repository\\obj\\",
+      "outputPath": "C:\\Users\\ankit aryan\\source\\Employee_Crud_With_Api\\Employee_Repository\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\ankit aryan\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -6669,8 +6669,8 @@
       "frameworks": {
         "netcoreapp2.1": {
           "projectReferences": {
-            "C:\\Users\\ankit aryan\\source\\repos\\EmployeeModel\\EmployeeModel.csproj": {
-              "projectPath": "C:\\Users\\ankit aryan\\source\\repos\\EmployeeModel\\EmployeeModel.csproj"
+            "C:\\Users\\ankit aryan\\source\\Employee_Crud_With_Api\\EmployeeModel\\EmployeeModel.csproj": {
+              "projectPath": "C:\\Users\\ankit aryan\\source\\Employee_Crud_With_Api\\EmployeeModel\\EmployeeModel.csproj"
             }
           }
         }

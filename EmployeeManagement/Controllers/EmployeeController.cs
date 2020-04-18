@@ -11,6 +11,7 @@ namespace EmployeeManagement.Controllers
     using System.Collections.Generic;
     using System.Linq;
     using System.Threading.Tasks;
+    using System.Web.Http.Cors;
     using EmployeeModel;
     using Enployee_Manager;
     using Microsoft.AspNetCore.Http;
@@ -20,6 +21,7 @@ namespace EmployeeManagement.Controllers
     /// <summary>
     /// This is controller 
     /// </summary>
+   // [EnableCorsAttribute("*","*","*")]
     [Route("api/[controller]")]
     [ApiController]
     public class EmployeeController : ControllerBase
@@ -77,7 +79,7 @@ namespace EmployeeManagement.Controllers
         /// </summary>
         /// <param name="id"></param>
         /// <returns></returns>
-        [Route("GetEmployee")]
+        [Route("Api/GetEmployee")]
         [HttpGet]
         public Model_Of_Employee GetEmployee(int id)
         {
@@ -111,7 +113,7 @@ namespace EmployeeManagement.Controllers
         /// this is method
         /// </summary>
         /// <returns></returns>
-        [Route("GetAllEmployee")]
+        [Route("Api/GetAllEmployee")]
         [HttpGet]
         public IEnumerable<Model_Of_Employee> GetAllEmployees()
         {
@@ -123,15 +125,15 @@ namespace EmployeeManagement.Controllers
         /// this is method
         /// </summary>
         /// <returns></returns>
-        [Route("Login")]
+        [Route("Api/Login")]
         [HttpPost]
-        public IActionResult Login(string email,string password)
+        public IActionResult Login(Model_Of_Employee employee )
         {
-            var result = this.manager.Login(email, password);
+            var result = this.manager.Login(employee.Email, employee.Password);
 
             if (result)
             {
-                return Ok(email);
+                return this.Ok(employee.Email);
             }
             return this.BadRequest();
         }
