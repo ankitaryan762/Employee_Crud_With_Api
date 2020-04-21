@@ -1,59 +1,90 @@
-import React, { Component } from 'react';
+import React,{Component} from 'react';
+import {Container,Button,Col,Row,Form} from 'react-bootstrap';
+import { Redirect } from 'react-router-dom';
+import './loginCss.css';
+import {axios} from 'axios'
 
-export default class Login extends Component {
-  constructor(props) {
+ export class Login extends Component {
+constructor(props){
     super(props)
     this.state = {
-      email: "",
-      password: ""
+        Email:"",
+        Password: "",
+        loginAuthentication : false
     }
-  }
-  handleEmailChange = (event) => {
-    const email = event.target.value;
-    this.setState({
-      email: email
-    })
-  }
-  handlePasswordChange = (event) => {
-    const password = event.target.value;
-    this.setState({
-      password: password
-    })
-  }
-  handleSubmitButton = () => {
-    var data = {
-      Email: this.state.email,
-      Password: this.state.password
+}
 
+handleEmailChange=(event)=>{
+    const Email=event.target.value;
+    this.setState({
+        Email:Email
+    })
+    console.log("Email",this.state.Email)
+}
+
+
+handlePasswordChange=(event)=>{
+    const Password=event.target.value;
+    this.setState({
+        Password:Password
+    })
+    console.log("Password",this.state.Password)
+}
+
+handleSubmitButton=(event)=>{
+    event.preventDefault();
+    var data ={
+        Email: this.state.Email,
+        Password: this.state.Password
     }
-    console.log("data", data);
-    console.log("status", this.state.email, this.state.password);
-  }
-  render() {
-    return (
-      <div className="main-div">
-        <div className="test">
-          <div className="login-div">Login here</div>
-          <div className="main-Test-div">
+    axios.post('https://localhost:44304/api/Employee/Api/Login', data)
+    .then(res=>{
+        console.log(res.data);
+        if(res.data === data.Email && res.data === data.Password)
+        {
+            this.setState({
+                loginAuthentication:true
+            })
+        }
+    })
+ //   console.log("status", this.state.email, this.state.password);
+}
 
-            <div className="email-div">
-              <input type="email" className="input-email-div" placeholder="Email" onChange={this.handleEmailChange} />
-            </div>
-            <div className="email-div">
-              <input type="password" className="input-email-div" placeholder="Password" onChange={this.handlePasswordChange} />
-            </div>
-
-          </div>
-          <div className="app-button">
-            <button className="submit" onClick={this.handleSubmitButton}>Submit</button>
-          </div>
-          <div className="links">
-            <a href="/Sign-up">Sign up</a>
-            <p className="paragrapgh"> | </p>
-            <a href="/Sign-up">Forgot Password</a>
-          </div>
-        </div>
-      </div>
-    )
-  }
+    render() {
+        if(this.state.loginAuthentication === true){
+            return <Redirect to = '/employee'/>
+        }
+        return (
+            <Container>
+            <Row>
+            <Col></Col>
+            <Col xs={6}>
+            <Form action="" name="myForm">
+            <h3 className = "m-4 d-flex justify-content-center">
+                Login Page
+            </h3>
+            <Form.Group controlId="formBasicEmail">
+                <Form.Label>Email address</Form.Label>
+                <Form.Control type="email" placeholder="Enter email" onChange={this.handleEmailChange}/>
+                <Form.Text className="text-muted">
+                 We'll never share your email with anyone else.
+                </Form.Text>
+            </Form.Group>
+            <Form.Group controlId="formBasicPassword">
+                <Form.Label>Password</Form.Label>
+                <Form.Control type="password" placeholder="Password" onChange={this.handlePasswordChange}/>
+            </Form.Group>
+            <Form.Group controlId="formBasicCheckbox">
+                <Form.Check type="checkbox" label="Remember Me" />
+            </Form.Group>
+            <Button variant="primary" type="submit" onClick={this.handleSubmitButton} >
+                Submit
+            </Button>
+            </Form>
+            </Col>
+            <Col></Col>
+            </Row>
+            </Container>
+        );
+    }
 }

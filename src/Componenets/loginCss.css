@@ -1,0 +1,21 @@
+.col-6{
+    background-color: #1d2124;
+    margin-top: 10px;
+    border-radius: 10px;
+  box-shadow: 0px 14px 80px rgba(34, 35, 58, 0.2);
+}
+.container{
+    margin-top: 400;
+}
+.m-4{
+    color: white;
+}
+.form-label {
+    color: white;
+}
+.form-group{
+    color: white;
+}
+.forgot-password{
+    color: white;
+}

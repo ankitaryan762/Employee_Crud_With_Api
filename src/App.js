@@ -1,24 +1,22 @@
-import React, { Component } from 'react';
-//import logo from './logo.svg';
+import React from 'react';
 import './App.css';
-//import Button from 'react-bootstrap/Button'
-import { Home } from './Componenets/Home'
-import  Login  from './Componenets/Login'
-import { BrowserRouter as Router ,Switch, Route } from 'react-router-dom'
-class App extends Component {
-  // constructor(props) {
-  //   super(props)
-  // }
-  render() {
-    return (
-      <Router>
-        <Switch>
-          <Route path='/' component={Login} exact />
-          <Route path='/login' component={Login} />
-          <Route path='/home' component={Home} />
-        </Switch>
-      </Router>
-    );
-  }
+import {Employee} from './Componenets/Employee'
+import {Login} from './Componenets/Login'
+import {Container} from 'react-bootstrap';
+import {Navigation} from "./Componenets/Navigation"
+import {BrowserRouter, Route, Switch} from 'react-router-dom'
+
+function App() {
+  return (
+  <BrowserRouter>
+  <div className="Container">
+      <h2 className = "m-3 d-flex justify-content-center">
+      Welcome Employee Management Information.
+      </h2>
+      <Navigation/>
+    </div>
+    </BrowserRouter>
+  );
 }
+
 export default App;
