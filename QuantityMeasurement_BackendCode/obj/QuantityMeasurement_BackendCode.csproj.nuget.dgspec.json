@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ankit aryan\\source\\repos\\QuantityMeasurementBackendProject\\QuantityMeasurement_BackendCode\\QuantityMeasurement_BackendCode.csproj": {}
+    "E:\\Backup\\source\\repos\\QuantityMeasurementBackendProject\\QuantityMeasurement_BackendCode\\QuantityMeasurement_BackendCode.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ankit aryan\\source\\repos\\QuantityMeasurementBackendProject\\QuantityMeasurement_BackendCode\\QuantityMeasurement_BackendCode.csproj": {
+    "E:\\Backup\\source\\repos\\QuantityMeasurementBackendProject\\QuantityMeasurement_BackendCode\\QuantityMeasurement_BackendCode.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ankit aryan\\source\\repos\\QuantityMeasurementBackendProject\\QuantityMeasurement_BackendCode\\QuantityMeasurement_BackendCode.csproj",
+        "projectUniqueName": "E:\\Backup\\source\\repos\\QuantityMeasurementBackendProject\\QuantityMeasurement_BackendCode\\QuantityMeasurement_BackendCode.csproj",
         "projectName": "QuantityMeasurement_BackendCode",
-        "projectPath": "C:\\Users\\ankit aryan\\source\\repos\\QuantityMeasurementBackendProject\\QuantityMeasurement_BackendCode\\QuantityMeasurement_BackendCode.csproj",
-        "packagesPath": "C:\\Users\\ankit aryan\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ankit aryan\\source\\repos\\QuantityMeasurementBackendProject\\QuantityMeasurement_BackendCode\\obj\\",
+        "projectPath": "E:\\Backup\\source\\repos\\QuantityMeasurementBackendProject\\QuantityMeasurement_BackendCode\\QuantityMeasurement_BackendCode.csproj",
+        "packagesPath": "C:\\Users\\ankit\\.nuget\\packages\\",
+        "outputPath": "E:\\Backup\\source\\repos\\QuantityMeasurementBackendProject\\QuantityMeasurement_BackendCode\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\ankit aryan\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\ankit\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -27,11 +27,11 @@
         "frameworks": {
           "netcoreapp2.1": {
             "projectReferences": {
-              "C:\\Users\\ankit aryan\\source\\repos\\QuantityMeasurementBackendProject\\QuantityMeasurement_Manager\\QuantityMeasurement_Manager.csproj": {
-                "projectPath": "C:\\Users\\ankit aryan\\source\\repos\\QuantityMeasurementBackendProject\\QuantityMeasurement_Manager\\QuantityMeasurement_Manager.csproj"
+              "E:\\Backup\\source\\repos\\QuantityMeasurementBackendProject\\QuantityMeasurement_Manager\\QuantityMeasurement_Manager.csproj": {
+                "projectPath": "E:\\Backup\\source\\repos\\QuantityMeasurementBackendProject\\QuantityMeasurement_Manager\\QuantityMeasurement_Manager.csproj"
               },
-              "C:\\Users\\ankit aryan\\source\\repos\\QuantityMeasurementBackendProject\\QuantityMeasurement_Model\\QuantityMeasurement_Model.csproj": {
-                "projectPath": "C:\\Users\\ankit aryan\\source\\repos\\QuantityMeasurementBackendProject\\QuantityMeasurement_Model\\QuantityMeasurement_Model.csproj"
+              "E:\\Backup\\source\\repos\\QuantityMeasurementBackendProject\\QuantityMeasurement_Model\\QuantityMeasurement_Model.csproj": {
+                "projectPath": "E:\\Backup\\source\\repos\\QuantityMeasurementBackendProject\\QuantityMeasurement_Model\\QuantityMeasurement_Model.csproj"
               }
             }
           }
@@ -45,6 +45,10 @@
       "frameworks": {
         "netcoreapp2.1": {
           "dependencies": {
+            "Experimental.System.Messaging": {
+              "target": "Package",
+              "version": "[1.1.0, )"
+            },
             "Microsoft.AspNetCore.App": {
               "suppressParent": "All",
               "target": "Package",
@@ -73,21 +77,21 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\ankit aryan\\source\\repos\\QuantityMeasurementBackendProject\\QuantityMeasurement_Manager\\QuantityMeasurement_Manager.csproj": {
+    "E:\\Backup\\source\\repos\\QuantityMeasurementBackendProject\\QuantityMeasurement_Manager\\QuantityMeasurement_Manager.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ankit aryan\\source\\repos\\QuantityMeasurementBackendProject\\QuantityMeasurement_Manager\\QuantityMeasurement_Manager.csproj",
+        "projectUniqueName": "E:\\Backup\\source\\repos\\QuantityMeasurementBackendProject\\QuantityMeasurement_Manager\\QuantityMeasurement_Manager.csproj",
         "projectName": "QuantityMeasurement_Manager",
-        "projectPath": "C:\\Users\\ankit aryan\\source\\repos\\QuantityMeasurementBackendProject\\QuantityMeasurement_Manager\\QuantityMeasurement_Manager.csproj",
-        "packagesPath": "C:\\Users\\ankit aryan\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ankit aryan\\source\\repos\\QuantityMeasurementBackendProject\\QuantityMeasurement_Manager\\obj\\",
+        "projectPath": "E:\\Backup\\source\\repos\\QuantityMeasurementBackendProject\\QuantityMeasurement_Manager\\QuantityMeasurement_Manager.csproj",
+        "packagesPath": "C:\\Users\\ankit\\.nuget\\packages\\",
+        "outputPath": "E:\\Backup\\source\\repos\\QuantityMeasurementBackendProject\\QuantityMeasurement_Manager\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\ankit aryan\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\ankit\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -100,11 +104,11 @@
         "frameworks": {
           "netcoreapp2.1": {
             "projectReferences": {
-              "C:\\Users\\ankit aryan\\source\\repos\\QuantityMeasurementBackendProject\\QuantityMeasurement_Model\\QuantityMeasurement_Model.csproj": {
-                "projectPath": "C:\\Users\\ankit aryan\\source\\repos\\QuantityMeasurementBackendProject\\QuantityMeasurement_Model\\QuantityMeasurement_Model.csproj"
+              "E:\\Backup\\source\\repos\\QuantityMeasurementBackendProject\\QuantityMeasurement_Model\\QuantityMeasurement_Model.csproj": {
+                "projectPath": "E:\\Backup\\source\\repos\\QuantityMeasurementBackendProject\\QuantityMeasurement_Model\\QuantityMeasurement_Model.csproj"
               },
-              "C:\\Users\\ankit aryan\\source\\repos\\QuantityMeasurementBackendProject\\QuantityMeasurment_Repository\\QuantityMeasurment_Repository.csproj": {
-                "projectPath": "C:\\Users\\ankit aryan\\source\\repos\\QuantityMeasurementBackendProject\\QuantityMeasurment_Repository\\QuantityMeasurment_Repository.csproj"
+              "E:\\Backup\\source\\repos\\QuantityMeasurementBackendProject\\QuantityMeasurment_Repository\\QuantityMeasurment_Repository.csproj": {
+                "projectPath": "E:\\Backup\\source\\repos\\QuantityMeasurementBackendProject\\QuantityMeasurment_Repository\\QuantityMeasurment_Repository.csproj"
               }
             }
           }
@@ -147,21 +151,21 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\ankit aryan\\source\\repos\\QuantityMeasurementBackendProject\\QuantityMeasurement_Model\\QuantityMeasurement_Model.csproj": {
+    "E:\\Backup\\source\\repos\\QuantityMeasurementBackendProject\\QuantityMeasurement_Model\\QuantityMeasurement_Model.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ankit aryan\\source\\repos\\QuantityMeasurementBackendProject\\QuantityMeasurement_Model\\QuantityMeasurement_Model.csproj",
+        "projectUniqueName": "E:\\Backup\\source\\repos\\QuantityMeasurementBackendProject\\QuantityMeasurement_Model\\QuantityMeasurement_Model.csproj",
         "projectName": "QuantityMeasurement_Model",
-        "projectPath": "C:\\Users\\ankit aryan\\source\\repos\\QuantityMeasurementBackendProject\\QuantityMeasurement_Model\\QuantityMeasurement_Model.csproj",
-        "packagesPath": "C:\\Users\\ankit aryan\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ankit aryan\\source\\repos\\QuantityMeasurementBackendProject\\QuantityMeasurement_Model\\obj\\",
+        "projectPath": "E:\\Backup\\source\\repos\\QuantityMeasurementBackendProject\\QuantityMeasurement_Model\\QuantityMeasurement_Model.csproj",
+        "packagesPath": "C:\\Users\\ankit\\.nuget\\packages\\",
+        "outputPath": "E:\\Backup\\source\\repos\\QuantityMeasurementBackendProject\\QuantityMeasurement_Model\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\ankit aryan\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\ankit\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -202,21 +206,21 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\ankit aryan\\source\\repos\\QuantityMeasurementBackendProject\\QuantityMeasurment_Repository\\QuantityMeasurment_Repository.csproj": {
+    "E:\\Backup\\source\\repos\\QuantityMeasurementBackendProject\\QuantityMeasurment_Repository\\QuantityMeasurment_Repository.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ankit aryan\\source\\repos\\QuantityMeasurementBackendProject\\QuantityMeasurment_Repository\\QuantityMeasurment_Repository.csproj",
+        "projectUniqueName": "E:\\Backup\\source\\repos\\QuantityMeasurementBackendProject\\QuantityMeasurment_Repository\\QuantityMeasurment_Repository.csproj",
         "projectName": "QuantityMeasurment_Repository",
-        "projectPath": "C:\\Users\\ankit aryan\\source\\repos\\QuantityMeasurementBackendProject\\QuantityMeasurment_Repository\\QuantityMeasurment_Repository.csproj",
-        "packagesPath": "C:\\Users\\ankit aryan\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ankit aryan\\source\\repos\\QuantityMeasurementBackendProject\\QuantityMeasurment_Repository\\obj\\",
+        "projectPath": "E:\\Backup\\source\\repos\\QuantityMeasurementBackendProject\\QuantityMeasurment_Repository\\QuantityMeasurment_Repository.csproj",
+        "packagesPath": "C:\\Users\\ankit\\.nuget\\packages\\",
+        "outputPath": "E:\\Backup\\source\\repos\\QuantityMeasurementBackendProject\\QuantityMeasurment_Repository\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\ankit aryan\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\ankit\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -229,8 +233,8 @@
         "frameworks": {
           "netcoreapp2.1": {
             "projectReferences": {
-              "C:\\Users\\ankit aryan\\source\\repos\\QuantityMeasurementBackendProject\\QuantityMeasurement_Model\\QuantityMeasurement_Model.csproj": {
-                "projectPath": "C:\\Users\\ankit aryan\\source\\repos\\QuantityMeasurementBackendProject\\QuantityMeasurement_Model\\QuantityMeasurement_Model.csproj"
+              "E:\\Backup\\source\\repos\\QuantityMeasurementBackendProject\\QuantityMeasurement_Model\\QuantityMeasurement_Model.csproj": {
+                "projectPath": "E:\\Backup\\source\\repos\\QuantityMeasurementBackendProject\\QuantityMeasurement_Model\\QuantityMeasurement_Model.csproj"
               }
             }
           }
@@ -261,7 +265,7 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
         }
       }
     }

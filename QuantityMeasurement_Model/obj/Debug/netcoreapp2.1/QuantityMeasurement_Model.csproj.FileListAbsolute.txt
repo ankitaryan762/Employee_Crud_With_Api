@@ -1,0 +1,22 @@
+C:\Users\ankit aryan\source\repos\QuantityMeasurementBackendProject\QuantityMeasurement_Model\bin\Debug\netcoreapp2.1\QuantityMeasurement_Model.deps.json
+C:\Users\ankit aryan\source\repos\QuantityMeasurementBackendProject\QuantityMeasurement_Model\bin\Debug\netcoreapp2.1\QuantityMeasurement_Model.runtimeconfig.json
+C:\Users\ankit aryan\source\repos\QuantityMeasurementBackendProject\QuantityMeasurement_Model\bin\Debug\netcoreapp2.1\QuantityMeasurement_Model.runtimeconfig.dev.json
+C:\Users\ankit aryan\source\repos\QuantityMeasurementBackendProject\QuantityMeasurement_Model\bin\Debug\netcoreapp2.1\QuantityMeasurement_Model.dll
+C:\Users\ankit aryan\source\repos\QuantityMeasurementBackendProject\QuantityMeasurement_Model\bin\Debug\netcoreapp2.1\QuantityMeasurement_Model.pdb
+C:\Users\ankit aryan\source\repos\QuantityMeasurementBackendProject\QuantityMeasurement_Model\obj\Debug\netcoreapp2.1\QuantityMeasurement_Model.csprojAssemblyReference.cache
+C:\Users\ankit aryan\source\repos\QuantityMeasurementBackendProject\QuantityMeasurement_Model\obj\Debug\netcoreapp2.1\QuantityMeasurement_Model.AssemblyInfoInputs.cache
+C:\Users\ankit aryan\source\repos\QuantityMeasurementBackendProject\QuantityMeasurement_Model\obj\Debug\netcoreapp2.1\QuantityMeasurement_Model.AssemblyInfo.cs
+C:\Users\ankit aryan\source\repos\QuantityMeasurementBackendProject\QuantityMeasurement_Model\obj\Debug\netcoreapp2.1\QuantityMeasurement_Model.dll
+C:\Users\ankit aryan\source\repos\QuantityMeasurementBackendProject\QuantityMeasurement_Model\obj\Debug\netcoreapp2.1\QuantityMeasurement_Model.pdb
+E:\Backup\source\repos\QuantityMeasurementBackendProject\QuantityMeasurement_Model\bin\Debug\netcoreapp2.1\QuantityMeasurement_Model.deps.json
+E:\Backup\source\repos\QuantityMeasurementBackendProject\QuantityMeasurement_Model\bin\Debug\netcoreapp2.1\QuantityMeasurement_Model.runtimeconfig.json
+E:\Backup\source\repos\QuantityMeasurementBackendProject\QuantityMeasurement_Model\bin\Debug\netcoreapp2.1\QuantityMeasurement_Model.runtimeconfig.dev.json
+E:\Backup\source\repos\QuantityMeasurementBackendProject\QuantityMeasurement_Model\bin\Debug\netcoreapp2.1\QuantityMeasurement_Model.dll
+E:\Backup\source\repos\QuantityMeasurementBackendProject\QuantityMeasurement_Model\bin\Debug\netcoreapp2.1\QuantityMeasurement_Model.pdb
+E:\Backup\source\repos\QuantityMeasurementBackendProject\QuantityMeasurement_Model\obj\Debug\netcoreapp2.1\QuantityMeasurement_Model.csprojAssemblyReference.cache
+E:\Backup\source\repos\QuantityMeasurementBackendProject\QuantityMeasurement_Model\obj\Debug\netcoreapp2.1\QuantityMeasurement_Model.csproj.CoreCompileInputs.cache
+E:\Backup\source\repos\QuantityMeasurementBackendProject\QuantityMeasurement_Model\obj\Debug\netcoreapp2.1\QuantityMeasurement_Model.AssemblyInfoInputs.cache
+E:\Backup\source\repos\QuantityMeasurementBackendProject\QuantityMeasurement_Model\obj\Debug\netcoreapp2.1\QuantityMeasurement_Model.AssemblyInfo.cs
+E:\Backup\source\repos\QuantityMeasurementBackendProject\QuantityMeasurement_Model\obj\Debug\netcoreapp2.1\QuantityMeasurement_Model.dll
+E:\Backup\source\repos\QuantityMeasurementBackendProject\QuantityMeasurement_Model\obj\Debug\netcoreapp2.1\QuantityMeasurement_Model.pdb
+E:\Backup\source\repos\QuantityMeasurementBackendProject\QuantityMeasurement_Model\obj\Debug\netcoreapp2.1\QuantityMeasurement_Model.genruntimeconfig.cache

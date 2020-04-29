@@ -1,0 +1,32 @@
+C:\Users\ankit aryan\source\repos\QuantityMeasurementBackendProject\QuantityMeasurement_Manager\bin\Debug\netcoreapp2.1\QuantityMeasurement_Manager.deps.json
+C:\Users\ankit aryan\source\repos\QuantityMeasurementBackendProject\QuantityMeasurement_Manager\bin\Debug\netcoreapp2.1\QuantityMeasurement_Manager.runtimeconfig.json
+C:\Users\ankit aryan\source\repos\QuantityMeasurementBackendProject\QuantityMeasurement_Manager\bin\Debug\netcoreapp2.1\QuantityMeasurement_Manager.runtimeconfig.dev.json
+C:\Users\ankit aryan\source\repos\QuantityMeasurementBackendProject\QuantityMeasurement_Manager\bin\Debug\netcoreapp2.1\QuantityMeasurement_Manager.dll
+C:\Users\ankit aryan\source\repos\QuantityMeasurementBackendProject\QuantityMeasurement_Manager\bin\Debug\netcoreapp2.1\QuantityMeasurement_Manager.pdb
+C:\Users\ankit aryan\source\repos\QuantityMeasurementBackendProject\QuantityMeasurement_Manager\bin\Debug\netcoreapp2.1\QuantityMeasurement_Model.dll
+C:\Users\ankit aryan\source\repos\QuantityMeasurementBackendProject\QuantityMeasurement_Manager\bin\Debug\netcoreapp2.1\QuantityMeasurment_Repository.dll
+C:\Users\ankit aryan\source\repos\QuantityMeasurementBackendProject\QuantityMeasurement_Manager\bin\Debug\netcoreapp2.1\QuantityMeasurement_Model.pdb
+C:\Users\ankit aryan\source\repos\QuantityMeasurementBackendProject\QuantityMeasurement_Manager\bin\Debug\netcoreapp2.1\QuantityMeasurment_Repository.pdb
+C:\Users\ankit aryan\source\repos\QuantityMeasurementBackendProject\QuantityMeasurement_Manager\obj\Debug\netcoreapp2.1\QuantityMeasurement_Manager.csprojAssemblyReference.cache
+C:\Users\ankit aryan\source\repos\QuantityMeasurementBackendProject\QuantityMeasurement_Manager\obj\Debug\netcoreapp2.1\QuantityMeasurement_Manager.AssemblyInfoInputs.cache
+C:\Users\ankit aryan\source\repos\QuantityMeasurementBackendProject\QuantityMeasurement_Manager\obj\Debug\netcoreapp2.1\QuantityMeasurement_Manager.AssemblyInfo.cs
+C:\Users\ankit aryan\source\repos\QuantityMeasurementBackendProject\QuantityMeasurement_Manager\obj\Debug\netcoreapp2.1\QuantityMeasurement_Manager.csproj.CopyComplete
+C:\Users\ankit aryan\source\repos\QuantityMeasurementBackendProject\QuantityMeasurement_Manager\obj\Debug\netcoreapp2.1\QuantityMeasurement_Manager.dll
+C:\Users\ankit aryan\source\repos\QuantityMeasurementBackendProject\QuantityMeasurement_Manager\obj\Debug\netcoreapp2.1\QuantityMeasurement_Manager.pdb
+E:\Backup\source\repos\QuantityMeasurementBackendProject\QuantityMeasurement_Manager\bin\Debug\netcoreapp2.1\QuantityMeasurement_Manager.deps.json
+E:\Backup\source\repos\QuantityMeasurementBackendProject\QuantityMeasurement_Manager\bin\Debug\netcoreapp2.1\QuantityMeasurement_Manager.runtimeconfig.json
+E:\Backup\source\repos\QuantityMeasurementBackendProject\QuantityMeasurement_Manager\bin\Debug\netcoreapp2.1\QuantityMeasurement_Manager.runtimeconfig.dev.json
+E:\Backup\source\repos\QuantityMeasurementBackendProject\QuantityMeasurement_Manager\bin\Debug\netcoreapp2.1\QuantityMeasurement_Manager.dll
+E:\Backup\source\repos\QuantityMeasurementBackendProject\QuantityMeasurement_Manager\bin\Debug\netcoreapp2.1\QuantityMeasurement_Manager.pdb
+E:\Backup\source\repos\QuantityMeasurementBackendProject\QuantityMeasurement_Manager\bin\Debug\netcoreapp2.1\QuantityMeasurement_Model.dll
+E:\Backup\source\repos\QuantityMeasurementBackendProject\QuantityMeasurement_Manager\bin\Debug\netcoreapp2.1\QuantityMeasurment_Repository.dll
+E:\Backup\source\repos\QuantityMeasurementBackendProject\QuantityMeasurement_Manager\bin\Debug\netcoreapp2.1\QuantityMeasurement_Model.pdb
+E:\Backup\source\repos\QuantityMeasurementBackendProject\QuantityMeasurement_Manager\bin\Debug\netcoreapp2.1\QuantityMeasurment_Repository.pdb
+E:\Backup\source\repos\QuantityMeasurementBackendProject\QuantityMeasurement_Manager\obj\Debug\netcoreapp2.1\QuantityMeasurement_Manager.csprojAssemblyReference.cache
+E:\Backup\source\repos\QuantityMeasurementBackendProject\QuantityMeasurement_Manager\obj\Debug\netcoreapp2.1\QuantityMeasurement_Manager.csproj.CoreCompileInputs.cache
+E:\Backup\source\repos\QuantityMeasurementBackendProject\QuantityMeasurement_Manager\obj\Debug\netcoreapp2.1\QuantityMeasurement_Manager.AssemblyInfoInputs.cache
+E:\Backup\source\repos\QuantityMeasurementBackendProject\QuantityMeasurement_Manager\obj\Debug\netcoreapp2.1\QuantityMeasurement_Manager.AssemblyInfo.cs
+E:\Backup\source\repos\QuantityMeasurementBackendProject\QuantityMeasurement_Manager\obj\Debug\netcoreapp2.1\QuantityMeasurement_Manager.csproj.CopyComplete
+E:\Backup\source\repos\QuantityMeasurementBackendProject\QuantityMeasurement_Manager\obj\Debug\netcoreapp2.1\QuantityMeasurement_Manager.dll
+E:\Backup\source\repos\QuantityMeasurementBackendProject\QuantityMeasurement_Manager\obj\Debug\netcoreapp2.1\QuantityMeasurement_Manager.pdb
+E:\Backup\source\repos\QuantityMeasurementBackendProject\QuantityMeasurement_Manager\obj\Debug\netcoreapp2.1\QuantityMeasurement_Manager.genruntimeconfig.cache

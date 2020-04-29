@@ -1,4 +1,6 @@
-﻿using QuantityMeasurment_Repository;
+﻿using QuantityMeasurement_Model;
+using QuantityMeasurment_Repository;
+
 
 namespace QuantityMeasurement_Manager
 {
@@ -16,27 +18,27 @@ namespace QuantityMeasurement_Manager
             return this.repo.CentimetertoMeter(value);
         }
 
-        public decimal FeettoInch(Conversion value)
+        public decimal FeettoInch(Model value)
         {
             return this.repo.FeettoInch(value);
         }
 
-        public decimal GmtoKg(Conversion value)
+        public decimal GmtoKg(Model value)
         {
             return this.repo.FeettoInch(value);
         }
 
-        public decimal InchToFeet(Conversion value)
+        public decimal InchToFeet(Model value)
         {
             return this.repo.InchToFeet(value);
         }
 
-        public decimal KgtoGm(Conversion value)
+        public decimal KgtoGm(Model value)
         {
             return this.repo.KgtoGm(value);
         }
 
-        public decimal MetertoCentimeter(Conversion value)
+        public decimal MetertoCentimeter(Model value)
         {
             return this.repo.MetertoCentimeter(value);
         }

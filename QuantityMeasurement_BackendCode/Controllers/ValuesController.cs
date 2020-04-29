@@ -37,7 +37,7 @@ namespace QuantityMeasurement_BackendCode.Controllers
 
             [Route("InchToFeet")]
             [HttpPost]
-            public IActionResult InchToFeet(Conversion value)
+            public IActionResult InchToFeet(Model value)
             {
                 var result = this.manager.InchToFeet(value);
 
@@ -50,7 +50,7 @@ namespace QuantityMeasurement_BackendCode.Controllers
 
             [Route("MetertoCentimeter")]
             [HttpPost]
-            public IActionResult MetertoCentimeter(Conversion value)
+            public IActionResult MetertoCentimeter(Model value)
             {
                 var result = this.manager.MetertoCentimeter(value);
 
@@ -63,7 +63,7 @@ namespace QuantityMeasurement_BackendCode.Controllers
 
             [Route("CentimetertoMeter")]
             [HttpPost]
-            public IActionResult CentimetertoMeter(Conversion value)
+            public IActionResult CentimetertoMeter(Model value)
             {
                 var result = this.manager.CentimetertoMeter(value);
 
@@ -76,7 +76,7 @@ namespace QuantityMeasurement_BackendCode.Controllers
 
             [Route("KgtoGm")]
             [HttpPost]
-            public IActionResult KgtoGm(Conversion value)
+            public IActionResult KgtoGm(Model value)
             {
                 var result = this.manager.KgtoGm(value);
 
@@ -89,7 +89,7 @@ namespace QuantityMeasurement_BackendCode.Controllers
 
             [Route("GmtoKg")]
             [HttpPost]
-            public IActionResult GmtoKg(Conversion value)
+            public IActionResult GmtoKg(Model value)
             {
                 var result = this.manager.GmtoKg(value);
 

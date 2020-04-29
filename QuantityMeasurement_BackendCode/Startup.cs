@@ -58,6 +58,12 @@ namespace QuantityMeasurement_BackendCode
             }
 
             app.UseHttpsRedirection();
+            app.UseCors(builder =>
+            {
+                builder.AllowAnyOrigin(); 
+                builder.AllowAnyMethod(); 
+                builder.AllowAnyHeader();
+            });
 
             //app.UseMvc();
             app.UseStaticFiles();
