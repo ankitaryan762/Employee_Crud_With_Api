@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
+using QuantityMeasurement_BackendCode.services;
 using QuantityMeasurement_Manager;
 using QuantityMeasurement_Model;
 
@@ -12,6 +13,8 @@ namespace QuantityMeasurement_BackendCode.Controllers
     [ApiController]
     public class ValuesController : ControllerBase
     {
+        Sender sender = new Sender();
+        Receiver receiver = new Receiver();
             public IManager manager;
 
             public ValuesController(IManager manager)
@@ -29,6 +32,8 @@ namespace QuantityMeasurement_BackendCode.Controllers
 
                 if (result >= 0)
                 {
+               
+                sender.SendMessage("Inch ",result);
                     return this.Ok(result);
                 }
                 return this.BadRequest();
@@ -43,7 +48,8 @@ namespace QuantityMeasurement_BackendCode.Controllers
 
                 if (result >= 0)
                 {
-                    return this.Ok(result);
+                sender.SendMessage("Feet ", result);
+                return this.Ok(result);
                 }
                 return this.BadRequest();
             }
@@ -56,7 +62,8 @@ namespace QuantityMeasurement_BackendCode.Controllers
 
                 if (result >= 0)
                 {
-                    return this.Ok(result);
+                sender.SendMessage("Centimeter ", result);
+                return this.Ok(result);
                 }
                 return this.BadRequest();
             }
@@ -69,7 +76,8 @@ namespace QuantityMeasurement_BackendCode.Controllers
 
                 if (result >= 0)
                 {
-                    return this.Ok(result);
+                sender.SendMessage("Meter ", result);
+                return this.Ok(result);
                 }
                 return this.BadRequest();
             }
@@ -82,7 +90,8 @@ namespace QuantityMeasurement_BackendCode.Controllers
 
                 if (result >= 0)
                 {
-                    return this.Ok(result);
+                sender.SendMessage("Gram ", result);
+                return this.Ok(result);
                 }
                 return this.BadRequest();
             }
@@ -95,7 +104,8 @@ namespace QuantityMeasurement_BackendCode.Controllers
 
                 if (result >= 0)
                 {
-                    return this.Ok(result);
+                sender.SendMessage("Kilogram ", result);
+                return this.Ok(result);
                 }
                 return this.BadRequest();
             }

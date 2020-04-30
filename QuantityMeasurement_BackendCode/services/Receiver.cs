@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
 using Experimental.System.Messaging;
@@ -10,46 +11,41 @@ namespace QuantityMeasurement_BackendCode.services
     /// <summary>
     /// This is the receiver
     /// </summary>
-    class Receiver
+    public class Receiver
     {
         /// <summary>
         /// Defines the entry point of the application.
         /// </summary>
         /// <param name="args">The arguments.</param>
-        public void main(string[] args)
+
+
+        public void ReceiveMessage()
         {
-            MessageQueue MyQueue = null;
+            MessageQueue messageQueue = null;
+            string path = @".\Private$\quantityMeasurement";
             try
             {
-                Console.WriteLine("Your message Here");
-
-                MyQueue = new MessageQueue(@".\Private$\quantityMeasurement");
-                Message[] messages = MyQueue.GetAllMessages();
-                if (messages.Length > 0)
+                messageQueue = new MessageQueue(path);
+                Message[] message = messageQueue.GetAllMessages();
+                if (message.Length > 0)
                 {
-                    foreach (Message m in messages)
+                    foreach (Message msg in message)
                     {
-                        m.Formatter = new XmlMessageFormatter(new String[] { "System.String,mscorlib" });
-                        string message = m.Body.ToString();
-
-                        Console.WriteLine(message);
-                        MyQueue.Receive();
+                        msg.Formatter = new XmlMessageFormatter(new string[] { "System.String,mscorlib" });
+                        string result = msg.Body.ToString();
+                        messageQueue.Receive();
+                        File.WriteAllText(@"E:\Backup\source\repos\QuantityMeasurementBackendProject\QuantityMeasurement_BackendCode\services\ReceviedMessage.txt", result);
                     }
+                    messageQueue.Refresh();
                 }
                 else
                 {
-                    Console.WriteLine("No New Messages in Message Queue");
+                    Console.WriteLine("Yet,there is not any Message present ");
                 }
-
-                MyQueue.Refresh();
             }
             catch (Exception e)
             {
                 Console.WriteLine(e.Message);
-            }
-            finally
-            {
-                MyQueue.Close();
             }
 
         }

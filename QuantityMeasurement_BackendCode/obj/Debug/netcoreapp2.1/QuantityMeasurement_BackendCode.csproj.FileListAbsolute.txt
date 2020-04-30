@@ -36,7 +36,6 @@ E:\Backup\source\repos\QuantityMeasurementBackendProject\QuantityMeasurement_Bac
 E:\Backup\source\repos\QuantityMeasurementBackendProject\QuantityMeasurement_BackendCode\bin\Debug\netcoreapp2.1\QuantityMeasurement_Model.pdb
 E:\Backup\source\repos\QuantityMeasurementBackendProject\QuantityMeasurement_BackendCode\bin\Debug\netcoreapp2.1\QuantityMeasurment_Repository.pdb
 E:\Backup\source\repos\QuantityMeasurementBackendProject\QuantityMeasurement_BackendCode\obj\Debug\netcoreapp2.1\QuantityMeasurement_BackendCode.csprojAssemblyReference.cache
-E:\Backup\source\repos\QuantityMeasurementBackendProject\QuantityMeasurement_BackendCode\obj\Debug\netcoreapp2.1\QuantityMeasurement_BackendCode.csproj.CoreCompileInputs.cache
 E:\Backup\source\repos\QuantityMeasurementBackendProject\QuantityMeasurement_BackendCode\obj\Debug\netcoreapp2.1\QuantityMeasurement_BackendCode.RazorAssemblyInfo.cache
 E:\Backup\source\repos\QuantityMeasurementBackendProject\QuantityMeasurement_BackendCode\obj\Debug\netcoreapp2.1\QuantityMeasurement_BackendCode.RazorAssemblyInfo.cs
 E:\Backup\source\repos\QuantityMeasurementBackendProject\QuantityMeasurement_BackendCode\obj\Debug\netcoreapp2.1\QuantityMeasurement_BackendCode.AssemblyInfoInputs.cache
@@ -46,3 +45,4 @@ E:\Backup\source\repos\QuantityMeasurementBackendProject\QuantityMeasurement_Bac
 E:\Backup\source\repos\QuantityMeasurementBackendProject\QuantityMeasurement_BackendCode\obj\Debug\netcoreapp2.1\QuantityMeasurement_BackendCode.dll
 E:\Backup\source\repos\QuantityMeasurementBackendProject\QuantityMeasurement_BackendCode\obj\Debug\netcoreapp2.1\QuantityMeasurement_BackendCode.pdb
 E:\Backup\source\repos\QuantityMeasurementBackendProject\QuantityMeasurement_BackendCode\obj\Debug\netcoreapp2.1\QuantityMeasurement_BackendCode.genruntimeconfig.cache
+E:\Backup\source\repos\QuantityMeasurementBackendProject\QuantityMeasurement_BackendCode\obj\Debug\netcoreapp2.1\QuantityMeasurement_BackendCode.csproj.CoreCompileInputs.cache

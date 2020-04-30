@@ -8,20 +8,24 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Logging;
 using QuantityMeasurement_BackendCode.services;
+using StackExchange.Redis;
 
 namespace QuantityMeasurement_BackendCode
 {
     public class Program
     {
-        Sender sender = null;
-        Receiver receiver = null;
         public static void Main(string[] args)
         {
-            Sender sender = null;
-            Receiver receiver = null;
+            //ConnectionMultiplexer redis = ConnectionMultiplexer.Connect("localhost");
+            //IDatabase db = redis.GetDatabase();
+            //var val = db.StringGet("k1");
+            //Console.WriteLine(val);
+
+            Receiver receiver = new Receiver();
+            receiver.ReceiveMessage();
+
             BuildWebHost(args).Run();
-            sender.main(args);
-            receiver.main(args);
+      
         }
         public static IWebHost BuildWebHost(string[] args) =>
                 WebHost.CreateDefaultBuilder(args)

@@ -16,43 +16,32 @@ namespace QuantityMeasurement_BackendCode.services
         /// Defines the entry point of the application.
         /// </summary>
         /// <param name="args">The arguments.</param>
-        public void main(string[] args)
+        public void SendMessage(string message, decimal number)
         {
-            Console.WriteLine("Enter Message");
-            string MessageToSend = Console.ReadLine();
-            MessageQueue MyQueue = null;
+            MessageQueue messageQueue = null;
+        
+            string path = @".\Private$\quantityMeasurement";
+
             try
             {
-                if (MessageQueue.Exists(@".\Private$\quantityMeasurement"))
+                if (MessageQueue.Exists(path))
                 {
-                    MyQueue = new MessageQueue(@".\Private$\quantityMeasurement");
+                    messageQueue = new MessageQueue(path);
                 }
                 else
                 {
-                    MyQueue = MessageQueue.Create(@".\Private$\quantityMeasurement");
+                    MessageQueue.Create(path);
+                    messageQueue = new MessageQueue(path);
                 }
+                string result = message + " : "+ number;
+                messageQueue.Send(result);
+               
+            }
+            catch
+            {
+                throw;
+            }
 
-                MyQueue.Label = "This is the test Queue";
-                MyQueue.Send(MessageToSend, "IDG");
-            }
-            catch (Exception e)
-            {
-                Console.WriteLine(e.Message);
-            }
-            finally
-            {
-                MyQueue.Dispose();
-                Console.WriteLine("Press 1 for send again");
-                int selection;
-                bool success = int.TryParse(Console.ReadLine(), out selection);
-                if (success)
-                {
-                    if (selection == 1)
-                    {
-                        main(new String[0]);
-                    }
-                }
-            }
         }
     }
 }
