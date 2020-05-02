@@ -1,4 +1,6 @@
-﻿using QuantityMeasurement_Model;
+﻿using QuantityMeasurement_BackendCode.services;
+using QuantityMeasurement_Model;
+using StackExchange.Redis;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -7,34 +9,49 @@ namespace QuantityMeasurment_Repository
 {
    public class Repository:IRepository
     {
+
+        Redis redis = new Redis();
         public decimal FeettoInch(Model value)
         {
-            return value.Feet * 12;
+            decimal result = value.Feet * 12;
+            redis.RedisConnection($"inch", result.ToString());
+            return result;
         }
 
         public decimal InchToFeet(Model value)
         {
-            return value.Inch / 12;
+            decimal result = value.Inch / 12;
+            redis.RedisConnection($"feet", result.ToString());
+            return result;
         }
 
         public decimal GmtoKg(Model value)
         {
-            return value.Gram / 1000;
+            decimal result = value.Gram / 1000;
+            redis.RedisConnection($"kg", result.ToString());
+            return result;
         }
 
         public decimal MetertoCentimeter(Model value)
         {
-            return value.Meter * 100;
+            decimal result = value.Meter * 100;
+            redis.RedisConnection($"centimeter", result.ToString());
+            return result;
         }
 
         public decimal CentimetertoMeter(Model value)
         {
-            return value.Centimeter / 100;
+            decimal result = value.Centimeter / 100;
+            redis.RedisConnection($"meter", result.ToString());
+            return result;
+           
         }
 
         public decimal KgtoGm(Model value)
         {
-            return value.KiloGram * 1000;
+            decimal result = value.KiloGram * 1000;
+            redis.RedisConnection($"gram", result.ToString());
+            return result;
         }
     }
 }

@@ -16,6 +16,7 @@ namespace QuantityMeasurement_BackendCode.Controllers
         Sender sender = new Sender();
         Receiver receiver = new Receiver();
             public IManager manager;
+        RedisImplementation redisImplementation;
 
             public ValuesController(IManager manager)
             {
@@ -34,7 +35,8 @@ namespace QuantityMeasurement_BackendCode.Controllers
                 {
                
                 sender.SendMessage("Inch ",result);
-                    return this.Ok(result);
+               
+                return this.Ok(result);
                 }
                 return this.BadRequest();
             }

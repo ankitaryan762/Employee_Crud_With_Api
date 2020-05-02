@@ -6,6 +6,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="StackExchange.Redis" Version="2.1.30" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\QuantityMeasurement_Model\QuantityMeasurement_Model.csproj" />
   </ItemGroup>
 

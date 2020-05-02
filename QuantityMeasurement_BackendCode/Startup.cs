@@ -13,6 +13,7 @@ using Microsoft.Extensions.Options;
 using Microsoft.OpenApi.Models;
 using QuantityMeasurement_Manager;
 using QuantityMeasurment_Repository;
+using StackExchange.Redis;
 
 namespace QuantityMeasurement_BackendCode
 {
@@ -33,6 +34,7 @@ namespace QuantityMeasurement_BackendCode
             services.AddTransient<IManager, Manager>();
             services.AddTransient<IRepository, Repository>();
 
+           
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "QuantiyMeasurement_Backend", Version = "v1" });

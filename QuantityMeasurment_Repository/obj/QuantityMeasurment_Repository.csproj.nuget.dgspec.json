@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "E:\\Backup\\source\\repos\\QuantityMeasurementBackendProject\\QuantityMeasurment_Repository\\QuantityMeasurment_Repository.csproj": {}
+    "C:\\Users\\ankit\\Desktop\\Employee_Crud_With_Api\\QuantityMeasurment_Repository\\QuantityMeasurment_Repository.csproj": {}
   },
   "projects": {
-    "E:\\Backup\\source\\repos\\QuantityMeasurementBackendProject\\QuantityMeasurement_Model\\QuantityMeasurement_Model.csproj": {
+    "C:\\Users\\ankit\\Desktop\\Employee_Crud_With_Api\\QuantityMeasurement_Model\\QuantityMeasurement_Model.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Backup\\source\\repos\\QuantityMeasurementBackendProject\\QuantityMeasurement_Model\\QuantityMeasurement_Model.csproj",
+        "projectUniqueName": "C:\\Users\\ankit\\Desktop\\Employee_Crud_With_Api\\QuantityMeasurement_Model\\QuantityMeasurement_Model.csproj",
         "projectName": "QuantityMeasurement_Model",
-        "projectPath": "E:\\Backup\\source\\repos\\QuantityMeasurementBackendProject\\QuantityMeasurement_Model\\QuantityMeasurement_Model.csproj",
+        "projectPath": "C:\\Users\\ankit\\Desktop\\Employee_Crud_With_Api\\QuantityMeasurement_Model\\QuantityMeasurement_Model.csproj",
         "packagesPath": "C:\\Users\\ankit\\.nuget\\packages\\",
-        "outputPath": "E:\\Backup\\source\\repos\\QuantityMeasurementBackendProject\\QuantityMeasurement_Model\\obj\\",
+        "outputPath": "C:\\Users\\ankit\\Desktop\\Employee_Crud_With_Api\\QuantityMeasurement_Model\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\ankit\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -59,14 +59,14 @@
         }
       }
     },
-    "E:\\Backup\\source\\repos\\QuantityMeasurementBackendProject\\QuantityMeasurment_Repository\\QuantityMeasurment_Repository.csproj": {
+    "C:\\Users\\ankit\\Desktop\\Employee_Crud_With_Api\\QuantityMeasurment_Repository\\QuantityMeasurment_Repository.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Backup\\source\\repos\\QuantityMeasurementBackendProject\\QuantityMeasurment_Repository\\QuantityMeasurment_Repository.csproj",
+        "projectUniqueName": "C:\\Users\\ankit\\Desktop\\Employee_Crud_With_Api\\QuantityMeasurment_Repository\\QuantityMeasurment_Repository.csproj",
         "projectName": "QuantityMeasurment_Repository",
-        "projectPath": "E:\\Backup\\source\\repos\\QuantityMeasurementBackendProject\\QuantityMeasurment_Repository\\QuantityMeasurment_Repository.csproj",
+        "projectPath": "C:\\Users\\ankit\\Desktop\\Employee_Crud_With_Api\\QuantityMeasurment_Repository\\QuantityMeasurment_Repository.csproj",
         "packagesPath": "C:\\Users\\ankit\\.nuget\\packages\\",
-        "outputPath": "E:\\Backup\\source\\repos\\QuantityMeasurementBackendProject\\QuantityMeasurment_Repository\\obj\\",
+        "outputPath": "C:\\Users\\ankit\\Desktop\\Employee_Crud_With_Api\\QuantityMeasurment_Repository\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\ankit\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -82,8 +82,8 @@
         "frameworks": {
           "netcoreapp2.1": {
             "projectReferences": {
-              "E:\\Backup\\source\\repos\\QuantityMeasurementBackendProject\\QuantityMeasurement_Model\\QuantityMeasurement_Model.csproj": {
-                "projectPath": "E:\\Backup\\source\\repos\\QuantityMeasurementBackendProject\\QuantityMeasurement_Model\\QuantityMeasurement_Model.csproj"
+              "C:\\Users\\ankit\\Desktop\\Employee_Crud_With_Api\\QuantityMeasurement_Model\\QuantityMeasurement_Model.csproj": {
+                "projectPath": "C:\\Users\\ankit\\Desktop\\Employee_Crud_With_Api\\QuantityMeasurement_Model\\QuantityMeasurement_Model.csproj"
               }
             }
           }
@@ -102,6 +102,10 @@
               "target": "Package",
               "version": "[2.1.0, )",
               "autoReferenced": true
+            },
+            "StackExchange.Redis": {
+              "target": "Package",
+              "version": "[2.1.30, )"
             }
           },
           "imports": [
